@@ -1,1 +1,140 @@
+-- PROJETO INTEGRADOR: NUTRIMOV - SAÚDE E BEM ESTAR
+-- CRIAÇÃO DO BANCO DE DADOS
 
+PRAGMA foreign_keys = on;
+
+-- TABELA USUARIO
+
+CREATE TABLE IF NOT EXISTS USUARIO (
+  id_usuario INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL,
+  email TEXT NOT NULL UNIQUE,
+  senha TEXT NOT NULL,
+  data_cadastro TEXT
+  );
+
+-- TABELA PERFIL
+
+CREATE TABLE IF NOT EXISTS PERFIL (
+  id_perfil INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_usuario INTEGER NOT NULL UNIQUE
+  idade INTEGER,
+  altura REAL,
+  peso REAL,
+  objetivo TEXT,
+
+FOREIGN KEY (id_usuario)
+  REFERENCES USUARIO(id_usuario)
+  );
+
+-- TABELA REFEIÇÃO
+
+CREAT TABLE IF NOT EXISTS REFEICAO (
+  id_refeicao INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_usuario INTEGER NOT NULL,
+  data TEXT NOT NULL,
+  horario TEXT,
+  tipo_refeicao TEXT,
+
+  FOREIGN KEY (id_usuario)
+  REFERENCES USUARIO(id_usuario)
+  );
+
+== TABELA ALIMENTO
+
+CREATE TABLE IF NOT EXISTS ALIMENTO (
+  id_alimento INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL,
+  categoria TEXT,
+  calorias REAL
+  );
+
+== TABELA ITEM_REFEIÇÃO
+
+CREATE TABLE IF NOT EXISTS ITEM_REFEICAO (
+  id_item INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_refeicao INTEGER NOT NULL,
+  id_alimento INTEGER NOT NULL,
+  quantidade REAL NOT NULL,
+
+FOREIGN KEY (id_refeicao)
+  REFERENCES REFEICAO(id_refeicao),
+
+FOREIGN KEY (id_alimento)
+  REFERENCES ALIMENTO(id_alimento)
+  );
+
+== TABELA EXERCÍCIO
+
+CREATE TABLE IF NOT EXISTS EXERCICIO (
+  id_exercicio INTEGER PRIMARY KEY AUTOINCREMENT,
+  nome TEXT NOT NULL,
+  grupo_muscular TEXT,
+  descricao TEXT
+  );
+
+== TABELA TREINO
+
+CREATE TABLE IF NOT EXISTS TREINO (
+  id_treino INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_usuario INTEGER NOT NULL,
+  nome TEXT NOT NULL,
+  descricao TEXT,
+  dias_semana TEXT,
+
+FOREIGN KEY (id_usuario)
+  REFERENCES USUARIO(id_usuario)
+  );
+
+== TABELA TREINO_EXERCÍCIO
+
+CREATE TABLE IF EXISTS TREINO_EXERCICIO (
+  id_treino_exercicio INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_treino INTEGER NOT NULL,
+  id_exercicio INTEGER NOT NULL,
+  series INTEGER,
+  repeticoes INTEGER,
+  ordem INTEGER,
+
+FOREIGN KEY (id_treino)
+  REFERENCES TREINO(id_treino),
+
+FOREIGN KEY (id_exercicio)
+  REFERENCES EXERCICIO(id_exercicio)
+  );
+
+== TABELA REGISTRO_EXERCÍCIO
+
+CREATE TABLE IF NOT EXISTS REGISTRO_EXERCICIO (
+  id_registro INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_usuario INTEGER NOT NULL,
+  id_exercicio INTEGER NOT NULL,
+  id_treino INTEGER,
+  data TEXT NOT NULL,
+  series_realizadas INTEGER,
+  repeticoes INTEGER,
+  carga REAL,
+
+FOREIGN KEY (id_usuario)
+  REFERENCES USUARIO(id_usuario),
+
+  FOREIGN KEY (id_exercicio)
+  REFERENCES EXERCICIO(id_exercicio),
+
+  FOREIGN KEY (id_treino)
+  REFERENCES TREINO(id_treino)
+  );
+
+== TABELA AVALIAÇÃO_CORPORAL
+
+CREATE TABLE IF NOT EXISTS AVALIACAO_CORPORAL (
+  id_avaliacao INTEGER PRIMARY KEY AUTOINCREMENT,
+  id_usuario INTEGER NOT NULL,
+  data_avaliacao TEXT NOT NULL,
+  peso REAL,
+  altura REAL,
+
+  FOREIGN KEY (id_usuario)
+  REFERENCES USUARIO(id_usuario)
+  );
+  
