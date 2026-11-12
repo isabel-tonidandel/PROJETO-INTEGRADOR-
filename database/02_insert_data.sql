@@ -5,9 +5,9 @@
 
 INSERT INTO USUARIO (nome,email, senha, data_cadastro)
 VALUES
-('Maria dos Santos', 'mariasantos@gmail.com', 'teste_01', '2026-11-11),
-('João da Silva','silvajoao@gmail.com', 'teste_02', '2026-11-11),
-('Luisa Pereira', 'luisapereira@gmail.com', 'teste_03', '2026-11-11);
+('Maria dos Santos', 'mariasantos@gmail.com', 'teste_01', '2026-11-11'),
+('João da Silva','silvajoao@gmail.com', 'teste_02', '2026-11-11'),
+('Luisa Pereira', 'luisapereira@gmail.com', 'teste_03', '2026-11-11');
 
   -- INSERIR PERFIS
 
@@ -21,11 +21,14 @@ VALUES
 
   SELECT * FROM PERFIL;
 
-  -- INSERIR REGISTRO DE ALIMENTAÇÃO
+  -- INSERIR ALIMENTOS
 
-  INSERT INTO REGISTRO_ALIMENTACAO
-  (id_usuario, alimento, quantidade, data_registro)
+  INSERT INTO ALIMENTO (nome, categoria, calorias)
   VALUES
-  (1, 'Arroz e frango', '300g', '2026-11-11'),
-  (2, 'Ovos e pão integral', '200g', '2026-11-11'),
-  (3, 'Salada e peixe', '300g', '2026-11-11'),
+    ('Arroz branco', 'Carboidrato', 128),
+    ('Peito de frango','Proteina', 165),
+    ('Ovo cozido', 'Proteina', 155),
+    ('Banana', 'Fruta', 89),
+    ('Batata doce', 'Carboidrato', 86),
+
+-- CONSULTAR ALIMENTOS
