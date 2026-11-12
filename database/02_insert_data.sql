@@ -32,3 +32,19 @@ VALUES
     ('Batata doce', 'Carboidrato', 86),
 
 -- CONSULTAR ALIMENTOS
+
+SELECT * FROM ALIMENTO;
+
+-- INSERIR REFEIÇÕES
+
+INSERT INTO REFEICAO (id_usuario, data, horario, tipo_refeicao)
+VALUES
+(1, '2026-11-11', '08:00', 'Café da manhã'),
+(2, '2026-11-11', '12:00', 'almoço'),
+(3, '2026-11-11', '19:00', 'Jantar');
+
+-- Consultar Refeições 
+
+SELECT * FROM REFEICAO;
+
+
