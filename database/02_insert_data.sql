@@ -29,7 +29,7 @@ VALUES
     ('Peito de frango','Proteina', 165),
     ('Ovo cozido', 'Proteina', 155),
     ('Banana', 'Fruta', 89),
-    ('Batata doce', 'Carboidrato', 86),
+    ('Batata doce', 'Carboidrato', 86);
 
 -- CONSULTAR ALIMENTOS
 
@@ -49,7 +49,7 @@ SELECT * FROM REFEICAO;
 
 -- INSERIR ITENS DAS REFEIÇÕES
 
-SELECT INTO ITEM_REFEICAO (id_refeicao, id_alimento, quantidade)
+INSERT INTO ITEM_REFEICAO (id_refeicao, id_alimento, quantidade)
   VALUES
   (1, 1, 100),
   (1, 2, 150),
@@ -58,13 +58,13 @@ SELECT INTO ITEM_REFEICAO (id_refeicao, id_alimento, quantidade)
 
 -- CONSULTAR ITENS DAS REFEIÇÕES
 
-SELECT * FROM REFEICAO;
+SELECT * FROM ITEM_REFEICAO;
 
 -- INSERIR EXERCÍCIOS
 
 INSERT INTO EXERCICIO (nome, grupo_muscular, descricao)
 VALUES
-('Agachamento', 'Pernas', 'Exercício para membros inferiores')
+('Agachamento', 'Pernas', 'Exercício para membros inferiores'),
 ('Supino reto', 'Peito', 'Exercício para peitoral'),
 ('Puxada alta', 'Costas', 'Exercício para dorsais'),
 ('Rosca direta', 'Bíceps', 'Exercício para bíceps'),
@@ -101,7 +101,7 @@ VALUES
 
 -- CONSULTAR EXERCÍCIOS DOS TREINOS
 
-SELECT * FROM TREINO_EXERCICIO
+SELECT * FROM TREINO_EXERCICIO;
 
 -- INSERIR REGISTROS DE EXERCÍCIOS
 
@@ -120,7 +120,7 @@ SELECT * FROM REGISTRO_EXERCICIO;
 INSERT INTO AVALIACAO_CORPORAL (id_usuario, data_avaliacao, peso, altura)
 VALUES 
 (1, '2026-11-11', 60.0, 1.65),
-(2, '2026-11-11', 82,0, 1.80),
+(2, '2026-11-11', 82.0, 1.80),
 (3, '2026-11-11', 70.0, 1.60);
 
 -- CONSULTAR AVALIAÇÕES CORPORAIS
@@ -141,7 +141,7 @@ WHERE id_usuario = 1;
 -- EXCLUIR UM REGISTRO DE AVALIAÇÃO
 
 DELETE FROM AVALIACAO_CORPORAL
-WHERE id_avaliacao = 3,
+WHERE id_avaliacao = 3;
 
 -- CONSULTAR AVALIAÇÕES RESTANTES
 
