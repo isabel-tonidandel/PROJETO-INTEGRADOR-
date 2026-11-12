@@ -43,8 +43,74 @@ VALUES
 (2, '2026-11-11', '12:00', 'almoço'),
 (3, '2026-11-11', '19:00', 'Jantar');
 
--- Consultar Refeições 
+-- CONSULTAR REFEIÇÕES
 
 SELECT * FROM REFEICAO;
 
+-- INSERIR ITENS DAS REFEIÇÕES
 
+SELECT INTO ITEM_REFEICAO (id_refeicao, id_alimento, quantidade)
+  VALUES
+  (1, 1, 100),
+  (1, 2, 150),
+  (2, 3, 2),
+  (3, 4, 100);
+
+-- CONSULTAR ITENS DAS REFEIÇÕES
+
+SELECT * FROM REFEICAO;
+
+-- INSERIR EXERCÍCIOS
+
+INSERT INTO EXERCICIO (nome, grupo_muscular, descricao)
+VALUES
+('Agachamento', 'Pernas', 'Exercício para membros inferiores')
+('Supino reto', 'Peito', 'Exercício para peitoral'),
+('Puxada alta', 'Costas', 'Exercício para dorsais'),
+('Rosca direta', 'Bíceps', 'Exercício para bíceps'),
+('Abdominal', 'Abdômen', 'Exercício para região abdominal');
+
+-- CONSULTAR EXERCÍCIOS
+
+SELECT * FROM EXERCICIO;
+
+-- INSERIR TREINOS
+
+INSERT INTO TREINO (id_usuario, nome, descricao, dias_semana)
+VALUES
+(1, 'Treino de pernas', 'Treino focado em membros inferiores', 'Segunda e quinta'),
+(2, 'Treino superior', 'Treino para membros superiores', 'Terça e sexta'),
+(3, 'Treino Completo', 'Treino geral para o corpo', 'Segunda, quarta e sexta');
+
+
+-- CONSULTAR TREINOS
+
+SELECT * FROM TREINO;
+
+-- INSERIR EXERCÍCIOS NOS TREINOS
+
+INSERT INTO TREINO_EXERCICIO (id_treino, id_exercicio, series, repeticoes, ordem)
+VALUES
+(1, 1, 3, 12, 1),
+(1, 5, 3, 15, 2),
+(2, 2, 3, 10, 1),
+(2, 3, 3, 12, 2),
+(2, 4, 3, 12, 3), 
+(3, 1, 3, 12, 1),
+(3, 2, 3, 10 ,2);
+
+-- CONSULTAR EXERCÍCIOS DOS TREINOS
+
+SELECT * FROM TREINO_EXERCICIO
+
+-- INSERIR REGISTROS DE EXERCÍCIOS
+
+INSERT INTO REGISTRO_EXERCICIO (id_usuario, id_exercicio, id_treino, data, series_realizadas, repeticoes, carga)
+VALUES
+(1, 1, 1, '2026-11-11', 3, 12, 20.0),
+(2, 2, 2, '2026-11-11', 3, 10, 30.0),
+(3, 4, 2, '2026-11-11', 3, 10, 10.0);
+
+-- CONSULTAR REGISTROS EXERCÍCIOS
+
+SELECT * FROM REGISTRO_EXERCICIO;
