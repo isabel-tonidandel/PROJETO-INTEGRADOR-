@@ -109,7 +109,7 @@ INSERT INTO REGISTRO_EXERCICIO (id_usuario, id_exercicio, id_treino, data, serie
 VALUES
 (1, 1, 1, '2026-11-11', 3, 12, 20.0),
 (2, 2, 2, '2026-11-11', 3, 10, 30.0),
-(3, 4, 2, '2026-11-11', 3, 10, 10.0);
+(3, 4, 3, '2026-11-11', 3, 10, 10.0);
 
 -- CONSULTAR REGISTROS EXERCÍCIOS
 
