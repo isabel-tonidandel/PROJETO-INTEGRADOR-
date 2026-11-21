@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meus Exercícios"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registre suas atividades físicas"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercício"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtExercicio"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Nome do exercício"
+            android:inputType="textCapSentences"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duração (minutos)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtDuracao"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 30"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Observações (opcional)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtObservacoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adicione informações sobre o exercício"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnSalvarExercicio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Salvar exercício"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnHistoricoExercicios"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Histórico de exercícios"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao" />
+
+    </LinearLayout>
+
+</ScrollView>

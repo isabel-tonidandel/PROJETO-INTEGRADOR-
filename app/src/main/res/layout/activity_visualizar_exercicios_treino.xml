@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/fundo_tela">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercícios do treino"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_titulo"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consulte e gerencie os exercícios do seu treino"
+        android:textSize="16sp"
+        android:textColor="@color/texto_secundario"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/txtNomeTreino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nome do treino"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_titulo"
+        android:background="@color/verde_claro"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de exercícios"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/texto_titulo"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/layoutExerciciosTreino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp" />
+
+    </ScrollView>
+
+</LinearLayout>

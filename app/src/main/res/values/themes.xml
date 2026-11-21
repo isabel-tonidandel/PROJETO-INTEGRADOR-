@@ -1,9 +1,40 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.NutriMov" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.NutriMov"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Cores principais -->
+        <item name="colorPrimary">@color/verde_principal</item>
+        <item name="colorOnPrimary">@color/texto_botao</item>
+        <item name="colorSecondary">@color/verde_secundario</item>
+
+        <!-- Fundo do aplicativo -->
+        <item name="android:windowBackground">@color/fundo_tela</item>
+        <item name="colorSurface">@color/fundo_tela</item>
+        <item name="colorOnSurface">@color/texto_principal</item>
+        <item name="colorOnSurfaceVariant">@color/texto_secundario</item>
+
+        <!-- Cores dos textos -->
+        <item name="android:textColorPrimary">@color/texto_principal</item>
+        <item name="android:textColorSecondary">@color/texto_secundario</item>
+        <item name="android:textColorHint">@color/texto_hint</item>
+
+        <!-- Campos de preenchimento -->
+        <item name="colorControlNormal">@color/borda_campo</item>
+        <item name="colorControlActivated">@color/verde_principal</item>
+        <item name="colorAccent">@color/verde_principal</item>
+
+        <!-- Barra de status -->
+        <item name="android:statusBarColor">@color/fundo_tela</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Desativar escurecimento automático -->
+        <item name="android:forceDarkAllowed"
+            tools:targetApi="q">false</item>
+
     </style>
 
-    <style name="Theme.NutriMov" parent="Base.Theme.NutriMov" />
+    <style name="Theme.NutriMov"
+        parent="Base.Theme.NutriMov" />
+
 </resources>

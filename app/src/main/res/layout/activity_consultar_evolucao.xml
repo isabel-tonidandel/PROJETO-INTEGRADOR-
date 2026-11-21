@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minha evolução"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acompanhe seus resultados"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resumo da evolução"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/txtPesoInicial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso inicial: --"
+            android:textSize="18sp"
+            android:textColor="@color/texto_principal"
+            android:background="@color/fundo_campo"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtPesoAtual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Último peso registrado: --"
+            android:textSize="18sp"
+            android:textColor="@color/texto_principal"
+            android:background="@color/fundo_campo"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/txtVariacaoPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Variação de peso: --"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:background="@color/verde_claro"
+            android:padding="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Histórico de avaliações"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consulte e gerencie suas avaliações anteriores"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutHistoricoEvolucao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>

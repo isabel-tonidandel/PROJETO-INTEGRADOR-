@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meus Treinos"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crie e organize seus treinos"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do treino"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtNomeTreino"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: Treino A"
+            android:inputType="textCapSentences"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição do treino"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtDescricaoTreino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ex.: Treino de membros inferiores"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dias da semana"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtDiasSemana"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: Segunda e quarta-feira"
+            android:inputType="textCapSentences"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnSalvarTreino"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Salvar treino"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnConsultarTreinos"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Consultar treinos"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao" />
+
+    </LinearLayout>
+
+</ScrollView>

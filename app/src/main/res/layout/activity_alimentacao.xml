@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minha Alimentação"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registre suas refeições diárias"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de refeição"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerRefeicao"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/verde_principal"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alimento"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtAlimento"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Alimento consumido"
+            android:inputType="textCapSentences"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade (g)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtQuantidade"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 100"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnSalvarRefeicao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Salvar refeição"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnHistoricoAlimentacao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Histórico alimentar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar exercício"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personalize sua rotina de treino"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:id="@+id/txtNomeTreino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do treino"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:background="@color/verde_claro"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do exercício"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtNomeExercicio"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: Agachamento"
+            android:inputType="textCapSentences"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo muscular"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtGrupoMuscular"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: Quadríceps"
+            android:inputType="textCapSentences"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade de séries"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtSeries"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 3"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quantidade de repetições"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtRepeticoes"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 12"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Carga (kg) - opcional"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtCarga"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 20"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnAdicionarExercicio"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Adicionar ao treino"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -7,12 +7,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +50,18 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(this, "Login realizado com sucesso!",
                         Toast.LENGTH_SHORT).show();
+
+                long idUsuario = bancoDados.buscarIdUsuario(email);
+
+                if (idUsuario != -1) {
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    intent.putExtra("id_usuario", idUsuario);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(this, "Usuário não encontrado",
+                            Toast.LENGTH_SHORT).show();
+                }
 
             } else {
 

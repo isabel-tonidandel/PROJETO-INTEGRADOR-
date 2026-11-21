@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Cores principais -->
+    <color name="verde_principal">#2E7D32</color>
+    <color name="verde_secundario">#4CAF50</color>
+    <color name="verde_claro">#E0F0E1</color>
+
+    <!-- Fundo das telas -->
+    <color name="fundo_tela">#F1F8F2</color>
+
+    <!-- Cores dos textos -->
+    <color name="texto_principal">#212121</color>
+    <color name="texto_secundario">#424242</color>
+    <color name="texto_hint">#616161</color>
+    <color name="texto_titulo">#2E7D32</color>
+
+    <!-- Cores dos botões -->
+    <color name="fundo_botao">#2E7D32</color>
+    <color name="texto_botao">#FFFFFF</color>
+
+    <!-- Campos de preenchimento -->
+    <color name="borda_campo">#757575</color>
+    <color name="fundo_campo">#FFFFFF</color>
+
 </resources>

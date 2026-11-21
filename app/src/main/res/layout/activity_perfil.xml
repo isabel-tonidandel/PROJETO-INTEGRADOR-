@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo_tela"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meu perfil"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gerencie seus dados e objetivos"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/verde_claro"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/txtNomeUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome do usuário"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/texto_titulo"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/txtEmailUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textSize="16sp"
+                android:textColor="@color/texto_secundario"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dados pessoais"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idade (anos)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtIdade"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 25"
+            android:inputType="number"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Altura (cm)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtAltura"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 165"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso (kg)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtPeso"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Ex.: 65,5"
+            android:inputType="numberDecimal"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Meu objetivo"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_principal" />
+
+        <EditText
+            android:id="@+id/edtObjetivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:hint="Ex.: Melhorar o condicionamento físico"
+            android:inputType="textCapSentences|textMultiLine"
+            android:gravity="top|start"
+            android:textSize="16sp"
+            android:textColor="@color/texto_principal"
+            android:textColorHint="@color/texto_hint"
+            android:backgroundTint="@color/verde_principal"
+            android:padding="12dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnSalvarPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Salvar perfil"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao"
+            android:layout_marginBottom="32dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/borda_campo"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minha evolução"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/texto_titulo"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registre e acompanhe seu progresso corporal"
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnRegistrarEvolucao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Registrar evolução"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnConsultarEvolucao"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Consultar evolução"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="@color/fundo_botao"
+            android:layout_marginBottom="16dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/borda_campo"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gerenciamento da conta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#B71C1C"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exclua permanentemente sua conta e todos os dados cadastrados. Esta ação não poderá ser desfeita."
+            android:textSize="16sp"
+            android:textColor="@color/texto_secundario"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnExcluirConta"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Excluir conta"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/texto_botao"
+            android:backgroundTint="#B71C1C"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>

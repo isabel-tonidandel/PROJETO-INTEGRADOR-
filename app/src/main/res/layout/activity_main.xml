@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -7,91 +7,126 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F1F8F2"
+    android:background="@color/fundo_tela"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="340dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="4dp"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NutriMov"
-            android:textSize="32sp"
-            android:textStyle="bold"
-            android:textColor="#2E7D32" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Saúde e Bem-Estar"
-            android:textSize="16sp"
-            android:textColor="#666666"
-            android:layout_marginBottom="45dp" />
-
-        <EditText
-            android:id="@+id/edtEmail"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="E-mail"
-            android:inputType="textEmailAddress"
-            android:padding="12dp"
-            android:backgroundTint="#2E7D32" />
-
-        <EditText
-            android:id="@+id/edtSenha"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="Senha"
-            android:inputType="textPassword"
-            android:padding="12dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="24dp"
-            android:backgroundTint="#2E7D32" />
-
-        <Button
-            android:id="@+id/btnEntrar"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="ENTRAR"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:textColor="#FFFFFF"
-            android:backgroundTint="#2E7D32" />
-
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:gravity="center"
-            android:layout_marginTop="24dp">
+            android:padding="24dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Não tem conta? "
-                android:textColor="#666666"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/txtCadastrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cadastre-se"
-                android:textColor="#2E7D32"
+                android:text="NutriMov"
+                android:textSize="32sp"
                 android:textStyle="bold"
-                android:textSize="14sp" />
+                android:textColor="@color/texto_titulo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saúde e Bem-Estar"
+                android:textSize="18sp"
+                android:textColor="@color/texto_secundario"
+                android:layout_marginBottom="40dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Entrar"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/texto_titulo"
+                android:gravity="center"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Acesse sua conta"
+                android:textSize="16sp"
+                android:textColor="@color/texto_secundario"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal"
+                android:textColorHint="@color/texto_hint"
+                android:padding="12dp"
+                android:backgroundTint="@color/verde_principal" />
+
+            <EditText
+                android:id="@+id/edtSenha"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:textColor="@color/texto_principal"
+                android:textColorHint="@color/texto_hint"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/verde_principal" />
+
+            <Button
+                android:id="@+id/btnEntrar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Entrar"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/texto_botao"
+                android:backgroundTint="@color/fundo_botao" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não tem conta? "
+                    android:textColor="@color/texto_secundario"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtCadastrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:gravity="center"
+                    android:text="Cadastre-se"
+                    android:textColor="@color/verde_principal"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
